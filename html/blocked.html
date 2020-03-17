@@ -1,9 +1,30 @@
-<html>
+<style>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    text-align: center;
+}
+.dark {
+    color: white;
+    background-color:#1A1B1D;
+}
+}
+</style>
+<html class="dark">
     <head>
-        <script src="../js/blocked.js" type="text/javascript"></script>
+        <script src="../js/blocked.js" type="text/javascript"></script>`
     </head>
     <body>
-        <h1>Blocked by SiteBlock extension</h1>
-        Url: <a id="url"></a>
+    <div class="center">
+            <video width="630" height="360" id="video" loop autoplay muted>
+                <source id="source" type="video/mp4">
+            </video>
+            <h1> Nope!</h1>
+            <p>Url:<a id="url"></a></p>
+        </div>
     </body>
 </html>
